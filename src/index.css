@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .align-element {
+      @apply mx-auto max-w-7xl px-8;
+    }
+    .header-font{
+      font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight:700;
+      font-style: normal;
+    }
+  }
