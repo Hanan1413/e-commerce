@@ -1,7 +1,7 @@
 import { BsCart3, BsMoonFill, BsSunFill } from "react-icons/bs";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { Link, NavLink } from "react-router-dom";
-import { Filters } from "../components";
+import { Filters, FormInput } from "../components";
 import {NavLinks} from "../components"
 const Navbar = () => {
   return (
@@ -35,7 +35,15 @@ const Navbar = () => {
           </div>
         </div>
         <div >
-          <Filters />
+          {/* <Filters /> */}
+          <form className="w-48 mr-6">
+            <FormInput 
+                   type='search'
+                   name='search'
+                   size='input-md'
+                   placeholder= "search"
+            />
+          </form>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal ">
